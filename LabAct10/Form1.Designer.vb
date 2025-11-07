@@ -27,6 +27,7 @@ Partial Class Form1
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnSort = New System.Windows.Forms.Button()
         Me.lstSorted = New System.Windows.Forms.ListBox()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtNumber
@@ -71,11 +72,21 @@ Partial Class Form1
         Me.lstSorted.Size = New System.Drawing.Size(120, 95)
         Me.lstSorted.TabIndex = 4
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(276, 239)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 5
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.lstSorted)
         Me.Controls.Add(Me.btnSort)
         Me.Controls.Add(Me.btnSave)
@@ -93,4 +104,5 @@ Partial Class Form1
     Friend WithEvents btnSave As Button
     Friend WithEvents btnSort As Button
     Friend WithEvents lstSorted As ListBox
+    Friend WithEvents btnClear As Button
 End Class

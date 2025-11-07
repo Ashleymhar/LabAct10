@@ -3,6 +3,13 @@
 Public Class Form1
     Private NumbersList As New List(Of Integer)
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Dim list As New List(Of Integer)
+
+    Dim filepath As String = "righthere.txt"
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
@@ -42,5 +49,14 @@ Public Class Form1
             lstSorted.Items.Add(num)
             Console.WriteLine(num)
         Next
+
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtNumber.Clear()
+        File.WriteAllText(filepath, "")
+        lstSorted.Items.Clear()
+
     End Sub
 End Class
